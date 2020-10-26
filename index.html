@@ -32,11 +32,11 @@ img {
 <script>
 $.ajax({
     type: 'GET',
-    url: 'projects.xml',
+    url: 'https://plunarlabcit.services.brown.edu/projects.xml',
     dataType: 'xml',
-    success: function(xml) {
-        var xmlDoc = $.parseXML(xml)
-        console.log(xmlDoc)
+    success: function(data) {
+        var xml = $.parseXML(data)
+        console.log(xml)
     }
 })
 </script>
