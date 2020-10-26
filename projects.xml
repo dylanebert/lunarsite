@@ -2,8 +2,20 @@
 <projects>
     <project>
         <title>New Brown Corpus</title>
-        <description></description>
+        <description>grounded language dataset</description>
         <url>https://lunar.cs.brown.edu/nbc</url>
+        <img>https://plunarlabcit.services.brown.edu/images/nbc_example.png</img>
+    </project>
+    <project>
+        <title>Project2</title>
+        <description>add to projects.xml</description>
+        <url></url>
+        <img></img>
+    </project>
+    <project>
+        <title>Project3</title>
+        <description>add to projects.xml</description>
+        <url></url>
         <img></img>
     </project>
 </projects>

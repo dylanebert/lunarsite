@@ -15,16 +15,56 @@ img {
     max-width: 100%;
     height: auto;
 }
+.project {
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+.project-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+.person {
+    width: 100%;
+}
+#left {
+    margin-top: 100px;
+}
 </style>
 <body>
 <div class="container my-5">
     <div class="row">
-        <div class="col-sm-3">
-            <img src="lunarlogo.svg">
+        <div class="col-sm-3" id="left">
+            <img class="py-3" src="lunarlogo.svg">
             <p class="lead py-3">Language Understanding and Representation</p>
+            <a class="text-muted" href="https://brown.edu">Brown University</a>
         </div>
         <div class="col-sm-9">
-            <p class="h1">Projects</p>
+            <p class="h3">Projects</p>
+            <div class="mb-5" id="projects"></div>
+            <p class="h3 my-4">Faculty</p>
+            <div id="faculty"></div>
+            <p class="h3 my-4">Current Students</p>
+            <div id="current"></div>
+            <p class="h3 my-4">Past Students</p>
+            <div id="past"></div>
         </div>
     </div>
 </div>
@@ -34,9 +74,80 @@ $.ajax({
     type: 'GET',
     url: 'https://plunarlabcit.services.brown.edu/projects.xml',
     dataType: 'xml',
-    success: function(data) {
-        var xml = $.parseXML(data)
-        console.log(xml)
+    success: function(xml) {
+        var projects = $(xml).find('project')
+        for(i = 0; i < projects.length; i++) {
+            var row = Math.floor(i / 3)
+            var col = i % 3
+            if(col == 0) {
+                let html = `<div class="row" id="row-` + row + `"></div>`
+                $('#projects').append(html)
+            }
+            let html = `<a class="col-sm-4 project border" target="_blank" id="proj-` + row + `-` + col + `"></a>`
+            $('#row-' + row).append(html)
+            var project = $('#proj-' + row + '-' + col)
+            var title = $(projects[i]).find('title').text()
+            var desc = $(projects[i]).find('description').text()
+            var url = $(projects[i]).find('url').text()
+            var img = $(projects[i]).find('img').text()
+            $(project).append('<p class="project-title">' + title + '</p>')
+            $(project).append('<p class="project-desc">' + desc + '</p>')
+            $(project).css('background-image', 'url(' + img + ')')
+            if(url.length) {
+                $(project).attr('href', url)
+            }
+        }
+
+        $('.project').each(function() {
+            $(this).css('height', $(this).width())
+        })
+    }
+})
+
+$.ajax({
+    type: 'GET',
+    'url': 'https://plunarlabcit.services.brown.edu/people.xml',
+    dataType: 'xml',
+    success: function(xml) {
+        var people = $(xml).find('person')
+        $(people).each(function(i, person) {
+            var name = $(person).find('name').text()
+            var status = $(person).find('status').text()
+            var desc = $(person).find('description').text()
+            var url = $(person).find('url').text()
+            var img = $(person).find('img').text()
+            var nameHtml = ``;
+            var html = ``;
+            if(url.length) {
+                nameHtml += `<span class="lead"><a href="` + url + `" target="_blank">` + name + `</a></span>`
+            } else {
+                nameHtml += `<span class="lead">` + name + `</span>`
+            }
+            if(img.length & desc.length) {
+                html += `
+                    <div class="person m-2 row">
+                        <div class="col-sm-2">
+                            <img class="person-img" src="` + img + `">
+                        </div>
+                        <div class="col-sm-10">
+                            <p class="m-0">
+                                ` + nameHtml + `
+                                <span class="mx-3">` + status + `</span>
+                            </p>
+                            <p class="m-0">` + desc + `</p>
+                        </div>
+                    </div>
+                `
+            } else {
+                html += `
+                    <div class="person m-2">
+                        `+ nameHtml + `
+                        <span class="mx-3">` + status + `</span>
+                    </div>
+                `
+            }
+            $('#' + $(person).parent()[0].nodeName).append(html)
+        })
     }
 })
 </script>

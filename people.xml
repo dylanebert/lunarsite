@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+    <faculty>
+        <person>
+            <name>Ellie Pavlick</name>
+            <status>Assistant Professor</status>
+            <description>add a description to people.xml</description>
+            <url>https://cs.brown.edu/people/epavlick/</url>
+            <img>https://cs.brown.edu/people/epavlick/profile-pic-circle.gif</img>
+        </person>
+    </faculty>
+    <current>
+        <person>
+            <name>Dylan Ebert</name>
+            <status>Ph.D. Student</status>
+            <description>add a description to people.xml</description>
+            <url>https://dylanebert.com</url>
+            <img>https://cs.brown.edu/people/epavlick/images/dylan.gif</img>
+        </person>
+        <person>
+            <name>Charlie Lovering</name>
+            <status>Ph.D. Student</status>
+            <description>add a description to people.xml</description>
+            <url>https://cjlovering.github.io/</url>
+            <img>https://cs.brown.edu/people/epavlick/images/charlie-cropped.gif</img>
+        </person>
+        <person>
+            <name>Roma Patel</name>
+            <status>Ph.D. Student</status>
+            <description>add a description to people.xml</description>
+            <url>http://cs.brown.edu/people/rpatel59/</url>
+            <img>https://cs.brown.edu/people/epavlick/images/roma-cropped.gif</img>
+        </person>
+        <person>
+            <name>Aaron Traylor</name>
+            <status>Ph.D. Student</status>
+            <description>add a description to people.xml</description>
+            <url>https://attraylor.github.io/</url>
+            <img>https://cs.brown.edu/people/epavlick/images/aaron-cropped.gif</img>
+        </person>
+        <person>
+            <name>Albert Webson</name>
+            <status>Ph.D. Student</status>
+            <description>add a description to people.xml</description>
+            <url>https://empirical.coffee/</url>
+            <img>https://cs.brown.edu/people/epavlick/images/albert-cropped.gif</img>
+        </person>
+        <person>
+            <name>Sydney Zink</name>
+            <status>Ph.D. Student</status>
+            <description>add a description to people.xml</description>
+            <img>https://cs.brown.edu/people/epavlick/images/sydney-cropped.gif</img>
+        </person>
+    </current>
+    <past>
+    </past>
+</people>
