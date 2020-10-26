@@ -23,6 +23,7 @@ img {
     background-size: cover;
     font-family: 'Roboto';
     font-weight: bold;
+    min-height: 12em;
 }
 .project-title {
     position: absolute;
@@ -52,7 +53,7 @@ img {
 }
 </style>
 <body>
-<div class="container my-5">
+<div class="container mt-5">
     <div class="row">
         <div class="col-sm-4" id="left">
             <img class="py-3" src="lunarlogo.svg">
@@ -94,16 +95,12 @@ $.ajax({
             var url = $(projects[i]).find('url').text()
             var img = $(projects[i]).find('img').text()
             $(project).append('<p class="project-desc">' + desc + '</p>')
-            $(project).append('<p class="project-title">' + title + '</p>')            
+            $(project).append('<p class="project-title">' + title + '</p>')
             $(project).css('background-image', 'url(' + img + ')')
             if(url.length) {
                 $(project).attr('href', url)
             }
         }
-
-        $('.project').each(function() {
-            $(this).css('height', $(this).width())
-        })
     }
 })
 
@@ -152,12 +149,6 @@ $.ajax({
             $('#' + $(person).parent()[0].nodeName).append(html)
         })
     }
-})
-
-$(window).on('resize', function() {
-    $('.project').each(function() {
-        $(this).css('height', $(this).width())
-    })
 })
 </script>
 </html>
