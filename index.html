@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 <style>
 img {
@@ -20,6 +21,8 @@ img {
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Roboto';
+    font-weight: bold;
 }
 .project-title {
     position: absolute;
@@ -51,12 +54,12 @@ img {
 <body>
 <div class="container my-5">
     <div class="row">
-        <div class="col-sm-3" id="left">
+        <div class="col-sm-4" id="left">
             <img class="py-3" src="lunarlogo.svg">
             <p class="lead py-3">Language Understanding and Representation</p>
             <a class="text-muted" href="https://brown.edu">Brown University</a>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8">
             <p class="h3">Projects</p>
             <div class="mb-5" id="projects"></div>
             <p class="h3 my-4">Faculty</p>
@@ -90,8 +93,8 @@ $.ajax({
             var desc = $(projects[i]).find('description').text()
             var url = $(projects[i]).find('url').text()
             var img = $(projects[i]).find('img').text()
-            $(project).append('<p class="project-title">' + title + '</p>')
             $(project).append('<p class="project-desc">' + desc + '</p>')
+            $(project).append('<p class="project-title">' + title + '</p>')            
             $(project).css('background-image', 'url(' + img + ')')
             if(url.length) {
                 $(project).attr('href', url)
@@ -125,7 +128,7 @@ $.ajax({
             }
             if(img.length & desc.length) {
                 html += `
-                    <div class="person m-2 row">
+                    <div class="person py-2 m-2 row">
                         <div class="col-sm-2">
                             <img class="person-img" src="` + img + `">
                         </div>
@@ -149,6 +152,12 @@ $.ajax({
             $('#' + $(person).parent()[0].nodeName).append(html)
         })
     }
+})
+
+$(window).on('resize', function() {
+    $('.project').each(function() {
+        $(this).css('height', $(this).width())
+    })
 })
 </script>
 </html>

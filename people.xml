@@ -51,7 +51,13 @@
             <description>add a description to people.xml</description>
             <img>https://cs.brown.edu/people/epavlick/images/sydney-cropped.gif</img>
         </person>
+        <person>
+            <name>Jack Merullo</name>
+            <status>Ph.D. Student</status>
+            <url>http://brown.edu/Research/AI/people/jack.html</url>
+        </person>
     </current>
     <past>
+
     </past>
 </people>
