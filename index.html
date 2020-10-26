@@ -74,6 +74,13 @@ img {
 </div>
 </body>
 <script>
+function resizeProjects() {
+    $('.project').each(function() {
+        var width = $(this).width()
+        $(this).css('height', width)
+    })
+}
+
 $.ajax({
     type: 'GET',
     url: 'https://plunarlabcit.services.brown.edu/projects.xml',
@@ -81,13 +88,13 @@ $.ajax({
     success: function(xml) {
         var projects = $(xml).find('project')
         for(i = 0; i < projects.length; i++) {
-            var row = Math.floor(i / 3)
-            var col = i % 3
+            var row = Math.floor(i / 2)
+            var col = i % 2
             if(col == 0) {
                 let html = `<div class="row" id="row-` + row + `"></div>`
                 $('#projects').append(html)
             }
-            let html = `<a class="col-sm-4 project border" target="_blank" id="proj-` + row + `-` + col + `"></a>`
+            let html = `<a class="col-sm-6 project border" target="_blank" id="proj-` + row + `-` + col + `"></a>`
             $('#row-' + row).append(html)
             var project = $('#proj-' + row + '-' + col)
             var title = $(projects[i]).find('title').text()
@@ -101,6 +108,8 @@ $.ajax({
                 $(project).attr('href', url)
             }
         }
+
+        resizeProjects()
     }
 })
 
@@ -150,5 +159,7 @@ $.ajax({
         })
     }
 })
+
+$(window).on('resize', resizeProjects)
 </script>
 </html>
