@@ -1,13 +1,22 @@
-to change projects/people, don't edit index.html directly
+# How to edit the website
 
----
+## Projects
+
+Don't edit any html directly. Instead, modify projects.xml
+
+Each project element requires:
+```
+<title>title of the project</title>
+<description>very very short description (~3 words)</description>
+<img>background image covering the link</img>
+```
+
+## People
 
 to edit projects, edit projects.xml
 
 each project element requires:
-<title>title of the project</title>
-<description>very very short description (~3 words)</description>
-<img>background image covering the link</img>
+
 
 and should preferably have
 <url>link to the external project site</url>
