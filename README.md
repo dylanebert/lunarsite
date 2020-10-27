@@ -30,7 +30,8 @@ Each person entry should have the following format, and be placed under either <
 ```
   
 ## Adding new pages
-To add new pages, copy and modify template.html, which will automatically have bootstrap formatting
+To add new pages, copy and modify template.html, which will automatically have bootstrap formatting. 
+
 Then, add a link to index.html, e.g.:
 ```
   <li><a href="#" class="nav-link" data-url="mypage.html">My Page</a></li>
