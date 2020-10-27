@@ -19,17 +19,20 @@ Each project entry should have the following format:
 Don't edit any html directly. Instead, modify people.xml
 
 Each person entry should have the following format, and be placed under either <current> or <past> appropriately:
-
-to edit people, edit people.xml
-
-place each person element under the correct tag {faculty, current, past}
-each person element requires:
-<name>Firstname Lastname</name>
-<status>phd, masters, etc</status>
-
-and should optionally contain
-<img>picture of the person</img>
-<description>description of the person's work</description>
-<url>link to person's external website</url>
-
-img/description won't show up on the website unless the entry has BOTH
+```
+  <person>
+    <name>Firstname Lastname</name>
+    <status>Ph.D., Masters, etc.</status>
+    <img>Link to picture of the person (optional, requires description)</img>
+    <description>Description of the person's work (optional, requires img)</description>
+    <url>Link to person's external website (optional)</url>
+  </person>
+```
+  
+## Adding new pages
+To add new pages, copy and modify template.html, which will automatically have bootstrap formatting
+Then, add a link to index.html, e.g.:
+```
+  <li><a href="#" class="nav-link" data-url="mypage.html">My Page</a></li>
+```
+modifying "mypage.html" to the page name. It should work automatically in the navigation.
