@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <people>
-    <faculty>
+    <current>
         <person>
             <name>Ellie Pavlick</name>
             <status>Assistant Professor</status>
@@ -8,8 +8,6 @@
             <url>https://cs.brown.edu/people/epavlick/</url>
             <img>https://cs.brown.edu/people/epavlick/profile-pic-circle.gif</img>
         </person>
-    </faculty>
-    <current>
         <person>
             <name>Dylan Ebert</name>
             <status>Ph.D. Student</status>

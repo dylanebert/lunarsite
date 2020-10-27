@@ -1,4 +1,4 @@
-you change projects/people, don't edit index.html directly
+to change projects/people, don't edit index.html directly
 
 ---
 
@@ -27,4 +27,3 @@ and should optionally contain
 <url>link to person's external website</url>
 
 img/description won't show up on the website unless the entry has BOTH
-

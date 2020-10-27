@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects>
     <project>
-        <title>New Brown Corpus</title>
-        <description>grounded language dataset</description>
+        <title>Grounded Language Acquisition</title>
+        <description>connecting language to world</description>
         <url>https://lunar.cs.brown.edu/nbc</url>
         <img>https://plunarlabcit.services.brown.edu/images/nbc_example.png</img>
     </project>

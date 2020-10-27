@@ -1,0 +1,73 @@
+<style>
+.project {
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto';
+}
+.project-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+.project-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+</style>
+<p class="h3">Projects</p>
+<div id="projects"></div>
+<script>
+function resizeProjects() {
+    $('.project').each(function() {
+        var width = $(this).width()
+        $(this).css('height', width)
+    })
+}
+
+$.ajax({
+    type: 'GET',
+    url: 'https://plunarlabcit.services.brown.edu/projects.xml',
+    dataType: 'xml',
+    success: function(xml) {
+        var projects = $(xml).find('project')
+        for(i = 0; i < projects.length; i++) {
+            var row = Math.floor(i / 2)
+            var col = i % 2
+            if(col == 0) {
+                let html = `<div class="row" id="row-` + row + `"></div>`
+                $('#projects').append(html)
+            }
+            let html = `<a class="col-sm-6 project border" target="_blank" id="proj-` + row + `-` + col + `"></a>`
+            $('#row-' + row).append(html)
+            var project = $('#proj-' + row + '-' + col)
+            var title = $(projects[i]).find('title').text()
+            var desc = $(projects[i]).find('description').text()
+            var url = $(projects[i]).find('url').text()
+            var img = $(projects[i]).find('img').text()
+            $(project).append('<p class="project-desc">' + desc + '</p>')
+            $(project).append('<p class="project-title">' + title + '</p>')
+            $(project).css('background-image', 'url(' + img + ')')
+            if(url.length) {
+                $(project).attr('href', url)
+            }
+        }
+
+        resizeProjects()
+    }
+})
+
+$(window).on('resize', resizeProjects)
+</script>
