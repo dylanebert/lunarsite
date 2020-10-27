@@ -34,10 +34,10 @@ $.ajax({
                     <div class="container-fluid">
                         <div class="person row">
                             <div class="col-sm-2">
-                                <img class="person-img" src="` + img + `">
+                                <img class="person-img py-2" src="` + img + `">
                             </div>
                             <div class="col-sm-10">
-                                <p class="m-0">
+                                <p class="m-0 pt-2">
                                     ` + nameHtml + `
                                     <span class="mx-3">` + status + `</span>
                                 </p>
@@ -49,7 +49,7 @@ $.ajax({
             } else {
                 html += `
                     <div class="container-fluid">
-                        <div class="person">
+                        <div class="person pt-2">
                             `+ nameHtml + `
                             <span class="ml-3">` + status + `</span>
                         </div>
