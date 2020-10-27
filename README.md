@@ -4,24 +4,21 @@
 
 Don't edit any html directly. Instead, modify projects.xml
 
-Each project element requires:
+Each project entry should have the following format:
 ```
-<title>title of the project</title>
-<description>very very short description (~3 words)</description>
-<img>background image covering the link</img>
+  <project>
+    <title>title of the project</title>
+    <description>very very short description (~3 words)</description>
+    <img>background image covering the link</img>
+    <url>link to the project site (optional)</url>
+  </project>
 ```
 
 ## People
 
-to edit projects, edit projects.xml
+Don't edit any html directly. Instead, modify people.xml
 
-each project element requires:
-
-
-and should preferably have
-<url>link to the external project site</url>
-
----
+Each person entry should have the following format, and be placed under either <current> or <past> appropriately:
 
 to edit people, edit people.xml
 
