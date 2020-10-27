@@ -12,7 +12,7 @@
 <script>
 $.ajax({
     type: 'GET',
-    'url': 'https://plunarlabcit.services.brown.edu/people.xml',
+    'url': 'https://lunar.cs.brown.edu/people.xml',
     dataType: 'xml',
     success: function(xml) {
         var people = $(xml).find('person')

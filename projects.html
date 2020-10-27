@@ -40,7 +40,7 @@ function resizeProjects() {
 
 $.ajax({
     type: 'GET',
-    url: 'https://plunarlabcit.services.brown.edu/projects.xml',
+    url: 'https://lunar.cs.brown.edu/projects.xml',
     dataType: 'xml',
     success: function(xml) {
         var projects = $(xml).find('project')
