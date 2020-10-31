@@ -46,6 +46,7 @@
         <person>
             <name>Sydney Zink</name>
             <status>Ph.D. Student</status>
+            <url>https://thinkzink.github.io/resume/</url>
             <description>add a description to people.xml</description>
             <img>https://cs.brown.edu/people/epavlick/images/sydney-cropped.gif</img>
         </person>
@@ -53,6 +54,8 @@
             <name>Jack Merullo</name>
             <status>Ph.D. Student</status>
             <url>http://brown.edu/Research/AI/people/jack.html</url>
+            <description>add a description to people.xml</description>
+            <img>images/jack-cropped.png</img>
         </person>
     </current>
     <past>
