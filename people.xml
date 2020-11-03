@@ -39,7 +39,7 @@
         <person>
             <name>Albert Webson</name>
             <status>Ph.D. Student</status>
-            <description>add a description to people.xml</description>
+            <description>My research seeks to answer the ambitious but inescapable question of “What does it take for a computer to genuinely understand language?” Currently, I’m working on an interdisciplinary theory of semantic meaning (linguistics), conceptual development (cognitive science), and mental representation (philosophy); plus, of course, how do they inform what types of grounding, structure, and evaluation we should have for NLP models.</description>
             <url>https://empirical.coffee/</url>
             <img>https://cs.brown.edu/people/epavlick/images/albert-cropped.gif</img>
         </person>
