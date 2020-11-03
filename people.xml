@@ -11,7 +11,7 @@
         <person>
             <name>Dylan Ebert</name>
             <status>Ph.D. Student</status>
-            <description>add a description to people.xml</description>
+            <description>I work on grounded language representations: getting computers to understand language in the context of the world, like people do. I'm also more broadly interested in NLP, AI, HCI, CogSci, and game/web development.</description>
             <url>https://dylanebert.com</url>
             <img>https://cs.brown.edu/people/epavlick/images/dylan.gif</img>
         </person>
