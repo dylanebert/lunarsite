@@ -42,12 +42,13 @@ Publications will automatically populate the project and papers pages from here.
     <codeurl>Url to paper code (optional)</codeurl>
     <dataurl>Url to paper data (optional)</dataurl>
     <authors>First Last, First Last, etc</authors>
-    <conference>Conference name, e.g. ACL 2030</conference>
+    <conference>Conference name, e.g. ACL</conference>
+    <year>Year of publication, e.g. 2030</year>
   </publication>
 ```
-  
+
 ## Adding new pages
-To add new pages, copy and modify template.html, which will automatically have bootstrap formatting. 
+To add new pages, copy and modify template.html, which will automatically have bootstrap formatting.
 
 Then, add a link to index.html, e.g.:
 ```

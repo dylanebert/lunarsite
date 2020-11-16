@@ -8,6 +8,7 @@
         <dataurl>link to data (optional)</dataurl>
         <authors></authors>
         <conference></conference>
+        <year></year>
     </publication>-->
     <publication>
         <project>Grounded Language Learning</project>
@@ -16,35 +17,40 @@
         <codeurl>https://github.com/dylanebert/nbc_starsem</codeurl>
         <dataurl>https://lunar.cs.brown.edu/nbc</dataurl>
         <authors>Dylan Ebert, Ellie Pavlick</authors>
-        <conference>*SEM 2020</conference>
+        <conference>*SEM</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>Grounded Language Learning</project>
         <title>Grounding Language to Non-Markovian Tasks with No Supervision of Task Specifications</title>
         <url>http://www.roboticsproceedings.org/rss16/p016.pdf</url>
         <authors>Roma Patel, Ellie Pavlick, Stefanie Tellex</authors>
-        <conference>RSS 2020</conference>
+        <conference>RSS</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>Grounded Language Learning</project>
         <title>Grounding Language to Landmarks in Arbitrary Outdoor Environments</title>
         <url>https://ieeexplore.ieee.org/document/9197068</url>
         <authors>Matthew Berg, Deniz Bayazit, Rebecca Mathew, Ariel Rotter-Aboyoun, Ellie Pavlick, Stefanie Tellex</authors>
-        <conference>ICRA 2020</conference>
+        <conference>ICRA</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>Grounded Language Learning</project>
         <title>Robot Object Retrieval with Contextual Natural Language Queries</title>
         <url>http://www.roboticsproceedings.org/rss16/p080.pdf</url>
         <authors>Thao Nguyen, Nakul Gopalan, Roma Patel, Matt Corsaro, Ellie Pavlick, Stefanie Tellex</authors>
-        <conference>ICRA 2020</conference>
+        <conference>ICRA</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>Grounded Language Learning</project>
         <title>Using Grounded Word Representations to Study Theories of Lexical Concepts</title>
         <url>http://arxiv.org/abs/2010.15225</url>
         <authors>Dylan Ebert, Ellie Pavlick</authors>
-        <conference>CMCL Workshop (NAACL) 2019</conference>
+        <conference>CMCL Workshop (NAACL)</conference>
+        <year>2019</year>
     </publication>
     <publication>
         <project>Grounded Language Learning</project>
@@ -52,6 +58,7 @@
         <url>https://arxiv.org/pdf/2010.04872.pdf</url>
         <authors>Charles Lovering, Ellie Pavlick</authors>
         <conference>Preprint</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>Representation Learning, Reasoning, and Generalization</project>
@@ -59,6 +66,7 @@
         <url></url>
         <authors>Rohan Jha, Charles Lovering, Ellie Pavlick</authors>
         <conference>Preprint</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>Representation Learning, Reasoning, and Generalization</project>
@@ -66,111 +74,135 @@
         <url>https://arxiv.org/pdf/2010.06032.pdf</url>
         <authors>Kellie Webster, Xuezhi Wang, Ian Tenney, Alex Beutel, Emily Pitler, Ellie Pavlick, Jilin Chen, Slav Petrov</authors>
         <conference>Preprint</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>Representation Learning, Reasoning, and Generalization</project>
         <title>What Happens To BERT Embeddings During Fine-tuning?</title>
         <url>https://www.aclweb.org/anthology/2020.blackboxnlp-1.4/</url>
         <authors>Amil Merchant, Elahe Rahimtoroghi, Ellie Pavlick, Ian Tenney</authors>
-        <conference>BlackboxNLP Workshop 2020</conference>
+        <conference>BlackboxNLP Workshop</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>Representation Learning, Reasoning, and Generalization</project>
         <title>BERT Rediscovers the Classical NLP Pipeline</title>
         <url>https://www.aclweb.org/anthology/P19-1452/</url>
         <authors>Ian Tenney, Dipanjan Das, Ellie Pavlick</authors>
-        <conference>ACL 2019</conference>
+        <conference>ACL</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>Representation Learning, Reasoning, and Generalization</project>
         <title>What do you learn from context? Probing for sentence structure in contextualized word representations.</title>
         <url>https://openreview.net/pdf?id=SJzSgnRcKX</url>
         <authors>Ian Tenney, Patrick Xia, Berlin Chen, Alex Wang, Adam Poliak, R Thomas McCoy, Najoung Kim, Benjamin Van Durme, Samuel R. Bowman, Dipanjan Das, Ellie Pavlick</authors>
-        <conference>ICLR 2019</conference>
+        <conference>ICLR</conference>
+        <year>2019</year>
     </publication>
     <publication>
         <project>Representation Learning, Reasoning, and Generalization</project>
         <title>Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference</title>
         <url>https://www.aclweb.org/anthology/P19-1334/</url>
         <authors>Tom McCoy, Ellie Pavlick, Tal Linzen</authors>
-        <conference>ACL 2019</conference>
+        <conference>ACL</conference>
+        <year>2019</year>
     </publication>
     <publication>
         <project>Representation Learning, Reasoning, and Generalization</project>
         <title>How well do NLI models capture verb veridicality?</title>
         <url>https://www.aclweb.org/anthology/D19-1228.pdf</url>
         <authors>Alexis Ross, Ellie Pavlick</authors>
-        <conference>EMNLP 2019</conference>
+        <conference>EMNLP</conference>
+        <year>2019</year>
     </publication>
     <publication>
         <project>Representation Learning, Reasoning, and Generalization</project>
         <title>Probing What Different NLP Tasks Teach Machinesabout Function Word Comprehension</title>
         <url>https://www.aclweb.org/anthology/S19-1026/</url>
         <authors>Najoung Kim, Roma Patel, Adam Poliak, Patrick Xia, Alex Wang, Tom McCoy, Ian Tenney, Alexis Ross, Tal Linzen, Benjamin Van Durme, Samuel R. Bowman, Ellie Pavlick</authors>
-        <conference>*SEM 2019</conference>
+        <conference>*SEM</conference>
+        <year>2019</year>
     </publication>
     <publication>
         <project>Representation Learning, Reasoning, and Generalization</project>
         <title>Can You Tell Me How to Get Past Sesame Street? Sentence-Level Pretraining Beyond Language Modeling</title>
         <url>https://www.aclweb.org/anthology/P19-1439/</url>
         <authors>Alex Wang, Jan Hula, Patrick Xia, Raghavendra Pappagari, R. Thomas McCoy, Roma Patel, Najoung Kim, Ian Tenney, Yinghui Huang, Katherin Yu, Shuning Jin, Berlin Chen, Benjamin Van Durme, Edouard Grave, Ellie Pavlick, Samuel R. Bowman</authors>
-        <conference>ACL 2019</conference>
+        <conference>ACL</conference>
+        <year>2019</year>
     </publication>
     <publication>
         <project>Language Theory and Fundamentals</project>
         <title>Are “Undocumented Workers” the Same as “Illegal Aliens”? Disentangling Denotation and Connotation in Vector Spaces</title>
         <url>https://arxiv.org/pdf/2010.02976.pdf</url>
         <authors>Albert Webson, Zhizhong Chen, Carsten Eickhoff, Ellie Pavlick</authors>
-        <conference>EMNLP 2020</conference>
+        <conference>EMNLP</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>Language Theory and Fundamentals</project>
         <title>Inherent Disagreements in Human Textual Inferences</title>
         <url>https://www.mitpressjournals.org/doi/full/10.1162/tacl_a_00293</url>
         <authors>Ellie Pavlick, Tom Kwiatkowski</authors>
-        <conference>TACL 2019</conference>
+        <conference>TACL</conference>
+        <year>2019</year>
     </publication>
     <publication>
         <project>Language Theory and Fundamentals</project>
         <title>Using Grounded Word Representations to Study Theories of Lexical Concepts</title>
         <url>http://arxiv.org/abs/2010.15225</url>
         <authors>Dylan Ebert, Ellie Pavlick</authors>
-        <conference>CMCL 2019</conference>
+        <conference>CMCL</conference>
+        <year>2019</year>
     </publication>
     <publication>
         <project>Language Theory and Fundamentals</project>
         <title>How well do NLI models capture verb veridicality?</title>
         <url>https://www.aclweb.org/anthology/D19-1228.pdf</url>
         <authors>Alexis Ross, Ellie Pavlick</authors>
-        <conference>EMNLP 2019</conference>
+        <conference>EMNLP</conference>
+        <year>2019</year>
     </publication>
     <publication>
         <project>Language Theory and Fundamentals</project>
         <title>Most babies are little and most problems are huge: Compositional Entailment in Adjective-Nouns</title>
         <url>https://www.aclweb.org/anthology/P16-1204.pdf</url>
         <authors>Ellie Pavlick, Chris Callison-Burch</authors>
-        <conference>ACL 2016</conference>
+        <conference>ACL</conference>
+        <year>2016</year>
     </publication>
     <publication>
         <project>Language Theory and Fundamentals</project>
         <title>So-Called Non-Subsective Adjectives</title>
         <url>https://www.aclweb.org/anthology/S16-2014.pdf</url>
         <authors>Ellie Pavlick, Chris Callison-Burch</authors>
-        <conference>*SEM 2016</conference>
+        <conference>*SEM</conference>
+        <year>2016</year>
+    </publication>
+    <publication>
+        <project>NLP and Society</project>
+        <title>Inducing Lexical Style Properties for Paraphrase and Genre Differentiation</title>
+        <url>https://www.mitpressjournals.org/doi/pdf/10.1162/tacl_a_00083</url>
+        <authors>Ellie Pavlick, Ani Nenkova</authors>
+        <conference>NAACL</conference>
+        <year>2015</year>
     </publication>
     <publication>
         <project>NLP and Society</project>
         <title>Are “Undocumented Workers” the Same as “Illegal Aliens”? Disentangling Denotation and Connotation in Vector Spaces</title>
         <url>https://arxiv.org/pdf/2010.02976.pdf</url>
         <authors>Albert Webson, Zhizhong Chen, Carsten Eickhoff, Ellie Pavlick</authors>
-        <conference>EMNLP 2020</conference>
+        <conference>EMNLP</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>NLP and Society</project>
         <title>Sochiatrist: Signals of Affect in Messaging Data</title>
         <url>https://dl.acm.org/doi/pdf/10.1145/3415182</url>
         <authors>Talie Massachi, Grant Fong, Varun Mathur, Sachin R Pendse, Gabriela Hoefer, Jessica J Fu, Chong Wang, Nikita Ramoji, Nicole R Nugent, Megan L Ranney, Daniel P Dickstein, Michael F Armey, Ellie Pavlick, Jeff Huang</authors>
-        <conference>CSCW 2020</conference>
+        <conference>CSCW</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>NLP and Society</project>
@@ -178,19 +210,14 @@
         <url>https://arxiv.org/pdf/2010.06032.pdf</url>
         <authors>Kellie Webster, Xuezhi Wang, Ian Tenney, Alex Beutel, Emily Pitler, Ellie Pavlick, Jilin Chen, Slav Petrov</authors>
         <conference>Preprint</conference>
+        <year>2020</year>
     </publication>
     <publication>
         <project>NLP and Society</project>
         <title>An Empirical Analysis of Formality in Online Communication</title>
         <url>https://www.mitpressjournals.org/doi/pdf/10.1162/tacl_a_00083</url>
         <authors>Ellie Pavlick, Joel Tetreault</authors>
-        <conference>TACL 2016</conference>
-    </publication>
-    <publication>
-        <project>NLP and Society</project>
-        <title>Inducing Lexical Style Properties for Paraphrase and Genre Differentiation</title>
-        <url>https://www.mitpressjournals.org/doi/pdf/10.1162/tacl_a_00083</url>
-        <authors>Ellie Pavlick, Ani Nenkova</authors>
-        <conference>NAACL 2015</conference>
+        <conference>TACL</conference>
+        <year>2016</year>
     </publication>
 </publications>
