@@ -9,8 +9,8 @@ Each project entry should have the following format:
   <project>
     <title>title of the project</title>
     <description>very very short description (~3 words)</description>
+    <blurb>longer blurb for project page</blurb>
     <img>background image covering the link</img>
-    <url>link to the project site (optional)</url>
   </project>
 ```
 
@@ -27,6 +27,23 @@ Each person entry should have the following format, and be placed under either <
     <description>Description of the person's work (optional, requires img)</description>
     <url>Link to person's external website (optional)</url>
   </person>
+```
+
+## Publications
+
+Don't edit any html directly. Instead, modify publications.xml
+
+Each publication entry should have the following format:
+```
+  <publication>
+    <project>Project name to filter under, which much be present in projects.xml</project>
+    <title>Title of the paper</title>
+    <url>Url to the paper</url>
+    <codeurl>Url to paper code (optional)</codeurl>
+    <dataurl>Url to paper data (optional)</dataurl>
+    <authors>First Last, First Last, etc</authors>
+    <conference>Conference name, e.g. ACL 2030</conference>
+  </publication>
 ```
   
 ## Adding new pages
