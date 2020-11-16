@@ -1,38 +1,47 @@
-<style>
-.publication {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-</style>
-
-<!--html here-->
-        <div class="col-sm-8" id="main">
-<h3>Papers</h3>
-<p> This page lists all papers lead by students in the Brown Lunar Lab. For Ellie's older work, see her <a href="http://cs.brown.edu/people/epavlick/">personal page</a>. For work done with Google Research coauthors, visit the <a href="https://research.google/people/106265/">Google Research page</a>.
-		<div class="publication">
-			<p class="m-0"><a href="http://arxiv.org/abs/2010.15225" target="_blank">
-				A Visuospatial Dataset for Naturalistic Verb Learning</a></p>
-			<p class="m-0"><a href="https://lunar.cs.brown.edu/nbc">[Code+Data]</a></p>
-			<p class="m-0">Dylan Ebert, Ellie Pavlick</p>
-			<p class="m-0"><i>*SEM 2020</i></p>
-		</div>
-		<div class="publication">
-			<p class="m-0"><a href="http://www.roboticsproceedings.org/rss16/p016.pdf" target="_blank">
-				 Grounding Language to Non-Markovian Tasks with No Supervision of Task Specifications.
-			</a></p>
-			<p class="m-0">Roma Patel, Ellie Pavlick, Stefanie Tellex </p>
-			<p class="m-0"><i>RSS 2020</i></p>
-		</div>
-		<div class="publication">
-			<p class="m-0"><a href="" target="_blank">
-				Does Data Augmentation Improve Generalization in NLP?
-			</a></p>
-			<p class="m-0">Rohan Jha, Charles Lovering, Ellie Pavlick
-			</p>
-			<p class="m-0"><i>Preprint</i></p>
-		</div>
-<!-- -->
-
+<div id="container">
+	<h3>Papers</h3>
+	<p> This page lists all papers lead by students in the Brown Lunar Lab. For Ellie's older work, see her <a href="http://cs.brown.edu/people/epavlick/">personal page</a>. For work done with Google Research coauthors, visit the <a href="https://research.google/people/106265/">Google Research page</a>.
+</div>
 <script>
-//scripts here
+$.ajax({
+    type: 'GET',
+    url: 'https://lunar.cs.brown.edu/publications.xml',
+    dataType: 'xml',
+    success: function(xml) {
+        var publications = $(xml).find('publication')
+        for(i = 0; i < publications.length; i++) {
+            var title = $(publications[i]).find('title').text()
+            var url = $(publications[i]).find('url').text()
+            var codeurl = $(publications[i]).find('codeurl').text()
+            var dataurl = $(publications[i]).find('dataurl').text()
+            var authors = $(publications[i]).find('authors').text()
+            var conference = $(publications[i]).find('conference').text()
+
+            let html = `
+                <div class="publication">`
+            if(url.length) {
+                html += `<p class="m-0"><a href="` + url + `" target="_blank">` + title + `</a></p>`
+            } else {
+                html += `<p class="m-0">` + title + `</p>`
+            }
+
+            if(codeurl.length || dataurl.length) {
+                html += `<p class="m-0">`
+                if(codeurl.length) {
+                    html += `<a href="` + codeurl + `" target="_blank">[Code]</a>`
+                }
+                if(dataurl.length) {
+                    html += `<a href="` + dataurl + `" target="_blank">[Data]</a>`
+                }
+                html += `</p>`
+            }
+            html += `
+        			<p class="m-0">` + authors + `</p>
+        			<p class="m-0"><i>` + conference + `</i></p>
+        		</div>
+            `
+            $('#container').append(html)
+        }
+    }
+})
 </script>

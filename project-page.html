@@ -1,4 +1,5 @@
 <div id="container">
+    <div class="mb-3"><a href="#" id="back">Back</a></div>    
     <h3>Papers</h3>
 </div>
 <script>
@@ -48,4 +49,9 @@ function populate(project) {
         }
     })
 }
+
+$('#back').click(function() {
+    window.location.href = "https://lunar.cs.brown.edu"
+    window.location.reload()
+})
 </script>

@@ -14,13 +14,32 @@
 <body>
 <div class="container mt-5">
     <div class="row">
-        <div class="col-sm-4" id="left"></div>
+        <div class="col-sm-4" id="left">
+            <img class="py-3" src="lunarlogo.svg" id="logo">
+            <p class="lead mt-3">Language Understanding and Representation</p>
+            <a class="text-muted" href="https://brown.edu" target="_blank">Brown University</a>
+            <ul class="mt-5 p-0">
+                <li><a href="#" class="nav-link" data-url="projects.html" style="text-decoration: underline">Projects</a></li>
+                <li><a href="#" class="nav-link" data-url="people.html">People</a></li>
+                <li><a href="#" class="nav-link" data-url="pubs.html">Papers, Code, & Data</a></li>
+                <li><a href="#" class="nav-link" data-url="joining.html">Join the Lab</a></li>
+            </ul>
+        </div>
         <div class="col-sm-8" id="main"></div>
     </div>
 </div>
 </body>
 <script>
-$('#left').load('left-home.html')
 $('#main').load('projects.html')
+
+$('.nav-link').click(function() {
+    $('#main').load($(this).data('url'))
+    $('.nav-link').css('text-decoration', 'none');
+    $(this).css('text-decoration', 'underline');
+})
+$('#logo').click(function(e) {
+    window.location.href = "https://lunar.cs.brown.edu"
+    window.location.reload()
+})
 </script>
 </html>
