@@ -9,51 +9,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-ul {
-    list-style-type: none;
-}
-.nav-link {
-    font-weight: 500;
-    color: black;
-}
-.nav-link:hover, .nav-link:active {
-    color: gray;
-}
-#logo {
-    width: 128px;
-    max-width: 100%;
-    height: auto;
-}
-#left {
-    margin-top: 100px;
-}
-</style>
 <body>
 <div class="container mt-5">
     <div class="row">
-        <div class="col-sm-4" id="left">
-            <img class="py-3" src="lunarlogo.svg" id="logo">
-            <p class="lead mt-3">Language Understanding and Representation</p>
-            <a class="text-muted" href="https://brown.edu" target="_blank">Brown University</a>
-            <ul class="mt-5 p-0">
-                <li><a href="#" class="nav-link" data-url="projects.html" style="text-decoration: underline">Projects</a></li>
-                <li><a href="#" class="nav-link" data-url="people.html">People</a></li>
-                <li><a href="#" class="nav-link" data-url="joining.html">Join the Lab</a></li>
-            </ul>
-        </div>
+        <div class="col-sm-4" id="left"></div>
         <div class="col-sm-8" id="main"></div>
     </div>
 </div>
 </body>
 <script>
+$('#left').load('left-home.html')
 $('#main').load('projects.html')
-
-$('.nav-link').click(function() {
-    $('#main').load($(this).data('url'))
-    $('.nav-link').css('text-decoration', 'none');
-    $(this).css('text-decoration', 'underline');
-})
 </script>
 </html>

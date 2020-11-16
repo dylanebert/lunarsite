@@ -1,0 +1,51 @@
+<div id="container">
+    <h3>Papers</h3>
+</div>
+<script>
+function populate(project) {
+    $.ajax({
+        type: 'GET',
+        url: 'https://lunar.cs.brown.edu/publications.xml',
+        dataType: 'xml',
+        success: function(xml) {
+            var publications = $(xml).find('publication')
+            for(i = 0; i < publications.length; i++) {
+                var project_ = $(publications[i]).find('project').text()
+                if(project_ == project) {
+                    var title = $(publications[i]).find('title').text()
+                    var url = $(publications[i]).find('url').text()
+                    var codeurl = $(publications[i]).find('codeurl').text()
+                    var dataurl = $(publications[i]).find('dataurl').text()
+                    var authors = $(publications[i]).find('authors').text()
+                    var conference = $(publications[i]).find('conference').text()
+
+                    let html = `
+                        <div class="publication">`
+                    if(url.length) {
+                        html += `<p class="m-0"><a href="` + url + `" target="_blank">` + title + `</a></p>`
+                    } else {
+                        html += `<p class="m-0">` + title + `</p>`
+                    }
+
+                    if(codeurl.length || dataurl.length) {
+                        html += `<p class="m-0">`
+                        if(codeurl.length) {
+                            html += `<a href="` + codeurl + `" target="_blank">[Code]</a>`
+                        }
+                        if(dataurl.length) {
+                            html += `<a href="` + dataurl + `" target="_blank">[Data]</a>`
+                        }
+                        html += `</p>`
+                    }
+                    html += `
+                			<p class="m-0">` + authors + `</p>
+                			<p class="m-0"><i>` + conference + `</i></p>
+                		</div>
+                    `
+                    $('#container').append(html)
+                }
+            }
+        }
+    })
+}
+</script>

@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     color: white;
     margin: 0;
     padding: 10px;
@@ -22,19 +22,30 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     color: white;
     margin: 0;
     padding: 10px;
 }
 </style>
-<p class="h3 my-4">Projects</p>
+<p class="h3 my-4">Current Projects</p>
 <div id="projects"></div>
 <script>
 function resizeProjects() {
     $('.project').each(function() {
         var width = $(this).width()
         $(this).css('height', width)
+    })
+}
+
+function loadProject(e) {
+    var title = e.data.title
+    var blurb = e.data.blurb
+    $('#left').load('left-project.html', function() {
+        populate(title, blurb)
+    })
+    $('#main').load('project-page.html', function() {
+        populate(title)
     })
 }
 
@@ -51,19 +62,19 @@ $.ajax({
                 let html = `<div class="row" id="row-` + row + `"></div>`
                 $('#projects').append(html)
             }
-            let html = `<a class="col-sm-6 project border" target="_blank" id="proj-` + row + `-` + col + `"></a>`
+            let html = `<a class="col-sm-6 project border" href="#" id="proj-` + row + `-` + col + `"></a>`
             $('#row-' + row).append(html)
             var project = $('#proj-' + row + '-' + col)
             var title = $(projects[i]).find('title').text()
             var desc = $(projects[i]).find('description').text()
-            var url = $(projects[i]).find('url').text()
             var img = $(projects[i]).find('img').text()
+            var blurb = $(projects[i]).find('blurb').text()
+            $(project).data('title', title)
+            $(project).data('blurb', blurb)
             $(project).append('<p class="project-desc">' + desc + '</p>')
             $(project).append('<p class="project-title">' + title + '</p>')
             $(project).css('background-image', 'url(' + img + ')')
-            if(url.length) {
-                $(project).attr('href', url)
-            }
+            $(project).click({'title': title, 'blurb': blurb}, loadProject)
         }
 
         resizeProjects()

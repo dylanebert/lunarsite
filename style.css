@@ -1,0 +1,25 @@
+.publication {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#logo {
+    width: 128px;
+    max-width: 100%;
+    height: auto;
+}
+#logo:hover {
+    cursor: pointer;
+}
+#left {
+    margin-top: 100px;
+}
+ul {
+    list-style-type: none;
+}
+.nav-link {
+    font-weight: 500;
+    color: black;
+}
+.nav-link:hover, .nav-link:active {
+    color: gray;
+}

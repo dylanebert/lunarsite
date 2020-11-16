@@ -1,0 +1,13 @@
+<img class="py-3" src="lunarlogo.svg" id="logo">
+<p class="lead mt-3" id="title">Project Title</p>
+<p class="text-muted pr-3" id="blurb">Project Blurb</p>
+<script>
+$('#logo').click(function(e) {
+    window.location.href = "https://lunar.cs.brown.edu"
+    window.location.reload()
+})
+function populate(title, blurb) {
+    $('#title').text(title)
+    $('#blurb').text(blurb)
+}
+</script>

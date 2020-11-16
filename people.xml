@@ -4,7 +4,7 @@
         <person>
             <name>Ellie Pavlick</name>
             <status>Assistant Professor</status>
-            <description>add a description to people.xml</description>
+            <description>Proud advisor of the below students. :)</description>
             <url>https://cs.brown.edu/people/epavlick/</url>
             <img>https://cs.brown.edu/people/epavlick/profile-pic-circle.gif</img>
         </person>
@@ -18,21 +18,21 @@
         <person>
             <name>Charlie Lovering</name>
             <status>Ph.D. Student</status>
-            <description>add a description to people.xml</description>
+	    <description>Representation learning, generalization/robustness, reinforcement learning, multiagent communication</description>
             <url>https://cjlovering.github.io/</url>
             <img>https://cs.brown.edu/people/epavlick/images/charlie-cropped.gif</img>
         </person>
         <person>
             <name>Roma Patel</name>
             <status>Ph.D. Student</status>
-            <description>add a description to people.xml</description>
+            <description>My research involves using natural language to structure reinforcement learning problems with the aim of building intelligent, interpretable and ethical agents that make use of language information to solve tasks. I'm also generally interested in understanding the biases learned and exhibited by neural models, to allow us to build more ethical and less (harmfully) biased systems interpretable by language-users i.e., us humans.</description>
             <url>http://cs.brown.edu/people/rpatel59/</url>
             <img>https://cs.brown.edu/people/epavlick/images/roma-cropped.gif</img>
         </person>
         <person>
             <name>Aaron Traylor</name>
             <status>Ph.D. Student</status>
-            <description>add a description to people.xml</description>
+            <description>Logical inference, neuro-symbolic reasoning, few-shot learning, generalization</description>
             <url>https://attraylor.github.io/</url>
             <img>https://cs.brown.edu/people/epavlick/images/aaron-cropped.gif</img>
         </person>
@@ -40,25 +40,71 @@
             <name>Albert Webson</name>
             <status>Ph.D. Student</status>
             <description>My research seeks to answer the ambitious but inescapable question of “What does it take for a computer to genuinely understand language?” Currently, I’m working on an interdisciplinary theory of semantic meaning (linguistics), conceptual development (cognitive science), and mental representation (philosophy); plus, of course, how do they inform what types of grounding, structure, and evaluation we should have for NLP models.</description>
-            <url>https://empirical.coffee/</url>
+            <url>https://representations.ai/</url>
             <img>https://cs.brown.edu/people/epavlick/images/albert-cropped.gif</img>
         </person>
         <person>
             <name>Sydney Zink</name>
             <status>Ph.D. Student</status>
             <url>https://thinkzink.github.io/resume/</url>
-            <description>add a description to people.xml</description>
+            <description>My research is interested in language documentation and community tracing, particularly with regard to low-resource and minority languages within contexts. Related interests include dialectical evolution with relation to theory of mind, as well as adversarial multilingual settings, e.g. manipulable translation systems and speaker identification aversion for a particular language.</description>
             <img>https://cs.brown.edu/people/epavlick/images/sydney-cropped.gif</img>
         </person>
         <person>
             <name>Jack Merullo</name>
             <status>Ph.D. Student</status>
             <url>http://brown.edu/Research/AI/people/jack.html</url>
-            <description>add a description to people.xml</description>
+            <description>Grounded language learning, representation learning, few-shot learning, information retrieval</description>
             <img>images/jack-cropped.png</img>
+        </person>
+        <person>
+            <name>Matthew McAvoy</name>
+            <status>MS Student</status>
+        </person>
+        <person>
+            <name>Deniz Bayazit</name>
+            <status>MS Student</status>
+        </person>
+        <person>
+            <name>Tucker Berckmann</name>
+            <status>MS Student</status>
+        </person>
+        <person>
+            <name>Yongming Han</name>
+	    <status>MS/PhD Student</status>
+        </person>
+        <person>
+            <name>Nam Do</name>
+            <status>Undergraduate</status>
+        </person>
+        <person>
+            <name>Niharika Jhingan</name>
+            <status>Undergraduate</status>
+        </person>
+        <person>
+            <name>Dan Smits</name>
+            <status>Undergraduate</status>
         </person>
     </current>
     <past>
+        <person>
+            <name>BigAI</name>
+	    <url>http://bigai.cs.brown.edu/people.html</url>
+            <description>Brown Integrative General Artificial Intelligence</description>
+            <img>images/bigAI.png</img>
+        </person>
+        <person>
+            <name>Carsten Eickhoff</name>
+	    <url>http://brown.edu/Research/AI/index.html</url>
+            <description>Biomedical Artificial Intelligence Lab</description>
+            <img>images/carsten.jpg</img>
+        </person>
+        <person>
+            <name>BLT</name>
+	    <url>https://sites.brown.edu/bltlab/</url>
+            <description>Brown Language and Thought Lab</description>
+            <img>images/blt-crop.png</img>
+        </person>
 
     </past>
 </people>

@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects>
     <project>
-        <title>Grounded Language Acquisition</title>
-        <description>connecting language to world</description>
-        <url>https://lunar.cs.brown.edu/nbc</url>
+        <title>Grounded Language Learning</title>
+        <description>connecting language to perception, action, and communication</description>
+        <blurb>How do we represent words and sentences in terms of the real-world entities, relations, goals,
+            and concepts to which they refer? How to we learn language from noisy, naturalistic data or in complex,
+            multi-agent environments? What type of features and structures are required for learning in such environments?</blurb>
         <img>https://plunarlabcit.services.brown.edu/images/nbc_cover.png</img>
     </project>
     <project>
-        <title>Project2</title>
-        <description>add to projects.xml</description>
-        <url></url>
-        <img></img>
+        <title>Representation Learning, Reasoning, and Generalization</title>
+        <description>neural models that solve tasks "the right way"</description>
+        <blurb>Large pretrained langauge models (BERT, GPT, etc.) acheive good performance on many NLP tasks,
+            but still fall far short of human language understanding. What features about language, exactly,
+            do these models capture? How do they form decision rules over these features? How can we teach models
+            to learn better features? How can we get models to infer robust decision rules from fewer training examples?</blurb>
+        <img>images/ml-cover.png</img>
+    </project>
+    <project>
+        <title>Language Theory and Fundamentals</title>
+        <description>what constitutes "human-level understanding"?</description>
+        <blurb>We want to build computational models of language that are informed by what we know about human language processing.
+            What does work in linguistics, cognitive science, and philosophy tell us about how linguistic representation and acquisition?
+            In interpretting human data, where is there theoretical concensus, and where is there still active debate? How do we evaluate
+            models of language? How do we compare different computational models to one another, or compare computational models to humans?</blurb>
+        <img>images/theory-cover.png</img>
+    </project>
+    <project>
+        <title>NLP and Society</title>
+        <description>bias, fairness, and computational social science</description>
+        <blurb>What do NLP systems encode about the societies in which they are built? What types of cultural norms, associations, or
+            biases do our models pick up? How can we use these systems to learn about language? How can we remove unwanted associations or
+            control unwanted behavior in our models?</blurb>
+        <img>images/compss-cover.png</img>
     </project>
 </projects>
