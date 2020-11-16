@@ -33,7 +33,7 @@ Each person entry should have the following format, and be placed under either <
 
 Don't edit any html directly. Instead, modify publications.xml
 
-Each publication entry should have the following format:
+Publications will automatically populate the project and papers pages from here. Each publication entry should have the following format:
 ```
   <publication>
     <project>Project name to filter under, which much be present in projects.xml</project>
