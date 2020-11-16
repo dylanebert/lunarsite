@@ -9,6 +9,11 @@ $.ajax({
     dataType: 'xml',
     success: function(xml) {
         var publications = $(xml).find('publication')
+		publications = publications.sort(function(a, b) {
+			var aVal = parseInt($(a).find('year').text())
+			var bVal = parseInt($(b).find('year').text())
+			return aVal > bVal ? -1 : aVal == bVal ? 0 : 1;
+		})
         for(i = 0; i < publications.length; i++) {
             var title = $(publications[i]).find('title').text()
             var url = $(publications[i]).find('url').text()
@@ -16,6 +21,7 @@ $.ajax({
             var dataurl = $(publications[i]).find('dataurl').text()
             var authors = $(publications[i]).find('authors').text()
             var conference = $(publications[i]).find('conference').text()
+			var year = $(publications[i]).find('year').text()
 
             let html = `
                 <div class="publication">`
@@ -37,7 +43,7 @@ $.ajax({
             }
             html += `
         			<p class="m-0">` + authors + `</p>
-        			<p class="m-0"><i>` + conference + `</i></p>
+        			<p class="m-0"><i>` + conference + ` ` + year + `</i></p>
         		</div>
             `
             $('#container').append(html)
