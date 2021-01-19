@@ -6,7 +6,7 @@
         <blurb>How do we represent words and sentences in terms of the real-world entities, relations, goals,
             and concepts to which they refer? How to we learn language from noisy, naturalistic data or in complex,
             multi-agent environments? What type of features and structures are required for learning in such environments?</blurb>
-        <img>https://plunarlabcit.services.brown.edu/images/nbc_cover.png</img>
+        <img>images/nbc_cover.png</img>
     </project>
     <project>
         <title>Representation Learning, Reasoning, and Generalization</title>
